@@ -8,12 +8,12 @@
     />
     <meta
       name="description"
-      content="Sai Sriram Gundepalli — Prospective PhD student in Computer Science (AI/ML). Research interests: representation learning, trustworthy ML, systems for ML; strong mathematical foundations in probability, statistics, and linear algebra."
+      content="Sai Sriram Gundepalli — Prospective PhD student in Computer Science (Human–Computer Interaction). Research interests: human–AI collaboration, intelligible & trustworthy AI, interaction design, evaluation methods, and systems pragmatics for usable ML."
     />
     <meta name="author" content="Sai Sriram Gundepalli" />
     <meta name="theme-color" content="#222222" />
 
-    <title>Sai Sriram Gundepalli — AI/ML PhD Portfolio</title>
+    <title>Sai Sriram Gundepalli</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -80,9 +80,11 @@
         margin: 1.5rem 0;
       }
       .cv-btn {
-        display: inline-flex;
+        display: flex;
         align-items: center;
         font-weight: 600;
+        width: 100%;
+        margin-bottom: 0.75rem;
       }
       .cv-btn span {
         margin-left: 0.35rem;
@@ -101,7 +103,7 @@
         <aside class="col-lg-4 mb-4">
           <div class="aside">
             <p class="name mb-1">Sai Sriram Gundepalli</p>
-            <div class="subtitle">Prospective PhD (AI/ML) — Fall 2026</div>
+            <div class="subtitle">Prospective PhD Student — Fall 2026</div>
             <img
               src="images/profile-pixel.jpg"
               alt="Portrait of Sai Sriram Gundepalli"
@@ -114,6 +116,7 @@
                 href="assets/saisriram_cv.pdf"
                 target="_blank"
                 rel="noopener"
+                aria-label="Open Curriculum Vitae PDF"
               >
                 <svg
                   width="18"
@@ -132,6 +135,29 @@
                   <path d="M14 2v6h6"></path>
                 </svg>
                 <span>Curriculum Vitae (PDF)</span>
+              </a>
+              <a
+                class="cv-btn"
+                href="assets/research_statement_hci.pdf"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open Research Statement PDF"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 4h16v16H4z"></path>
+                  <path d="M8 8h8M8 12h8M8 16h5"></path>
+                </svg>
+                <span>Research Statement (PDF)</span>
               </a>
             </div>
 
@@ -170,18 +196,14 @@
           <!-- About -->
           <section id="about" aria-label="About">
             <p>
-              I am an aspiring researcher preparing PhD applications in
-              <strong>Artificial Intelligence / Machine Learning</strong>. My
-              near-term goal is to study
-              <em
-                >data-efficient learning, robust and trustworthy models, and the
-                systems that support them</em
-              >. I am particularly enthusiastic about the
-              <strong>mathematical foundations</strong> that power modern ML —
-              <span class="badge badge-pill">Probability Theory</span>
-              <span class="badge badge-pill">Statistics</span>
-              <span class="badge badge-pill">Linear Algebra</span> — and I enjoy
-              connecting these tools to practical problems.
+              I am an aspiring HCI researcher preparing PhD applications in
+              <strong>Human–Computer Interaction</strong>, with a focus on
+              <em>human–AI collaboration, intelligibility, and evaluation</em>.
+              I study how design choices and systems constraints shape trust,
+              performance, and equity when people work with adaptive models. My
+              broader goal is to build interactive tools that make AI
+              <em>understandable, controllable, and reliable</em> in real
+              workflows.
             </p>
           </section>
 
@@ -189,31 +211,36 @@
           <section id="interests" aria-label="Research Interests">
             <h2 class="section-title">Research Interests</h2>
             <ul>
+              <li>Human–AI collaboration and mixed‑initiative interaction</li>
               <li>
-                Representation learning and generalization under limited
-                supervision
+                Intelligible/transparent AI: explanations, uncertainty, and
+                control
               </li>
               <li>
-                Trustworthy ML: robustness, interpretability, and evaluation
-              </li>
-              <li>Natural Language Processing and multimodal learning</li>
-              <li>
-                Systems for ML: efficiency, inference optimization, and
-                deployment
+                Evaluation methods: calibration, workload, error recovery, and
+                fairness
               </li>
               <li>
-                Probabilistic modeling and Bayesian perspectives for
-                decision-making
+                Prototyping & experimentation: end‑to‑end interactive systems
+              </li>
+              <li>Participatory design and values‑centered HCI</li>
+              <li>
+                Systems pragmatics for usable ML (latency, logging,
+                privacy‑aware data flows)
               </li>
             </ul>
           </section>
 
-          <!-- Statement -->
+          <!-- Statement (mini) -->
           <section id="statement" aria-label="Mini Research Statement">
-            I’m excited to pursue a research work in a PhD program where I can
-            combine rigorous theory with pragmatic engineering, and to
-            collaborate across AI, systems, and HCI to deliver methods that are
-            both principled and usable.
+            <p>
+              I aim to design interfaces and workflows that help people form
+              accurate mental models of AI systems and effectively steer them.
+              My PhD research will combine <strong>interaction design</strong>,
+              <strong>controlled and field evaluations</strong>, and
+              <strong>systems‑minded prototyping</strong> to advance practical,
+              trustworthy human–AI collaboration.
+            </p>
           </section>
 
           <!-- Preparation & Coursework -->
@@ -225,29 +252,29 @@
             <div class="row">
               <div class="col-md-6">
                 <ul class="mb-2">
-                  <li>Data Structures & Algorithms</li>
                   <li>Advanced Database Technology</li>
+                  <li>Networking & Advanced Data Communications</li>
+                  <li>Cloud Computing & Virtualization</li>
+                  <li>Data Structures & Algorithms</li>
                   <li>Multimedia & Web Technology</li>
-                  <li>Database Security & Reliability</li>
-                  <li>Java Applications in Technology</li>
                 </ul>
               </div>
               <div class="col-md-6">
                 <ul class="mb-2">
                   <li>
                     Mathematical Foundations: Probability, Statistics, Linear
-                    Algebra (ongoing study)
+                    Algebra
                   </li>
                   <li>
-                    Independent ML study: representation learning, evaluation,
-                    and deployment
+                    Independent study: human‑AI interaction, evaluation metrics,
+                    prototyping
                   </li>
                 </ul>
               </div>
             </div>
           </section>
 
-          <!-- Professional Background (brief, no companies/roles/technologies) -->
+          <!-- Professional Background (brief) -->
           <section id="background" aria-label="Professional Background">
             <h2 class="section-title">Professional Background</h2>
             <p>
@@ -256,11 +283,10 @@
                 >3+ years of professional software engineering
                 experience</strong
               >
-              building production systems and user-facing applications in
-              collaborative, fast-paced environments. My work has spanned
-              back-end services, responsive front-ends, and end-to-end product
-              development, with an emphasis on clean architecture, performance,
-              and iterative delivery.
+              building user‑facing interfaces and reliable back‑end services. I
+              value clean architecture, performance, accessibility, and
+              iterative delivery, skills I apply to research prototyping and
+              empirical studies.
             </p>
           </section>
 
