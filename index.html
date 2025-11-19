@@ -24,78 +24,7 @@
       crossorigin="anonymous"
     />
 
-    <style>
-      :root {
-        --ink: #1d1f21;
-        --muted: #6b7280;
-        --accent: #0ea5e9;
-      }
-      body {
-        color: var(--ink);
-      }
-      a {
-        color: var(--accent);
-      }
-      .name {
-        font-size: 1.9rem;
-        font-weight: 700;
-        line-height: 1.2;
-      }
-      .subtitle {
-        color: var(--muted);
-        font-size: 0.95rem;
-      }
-      .section-title {
-        font-weight: 700;
-        font-size: 1.15rem;
-        margin-top: 1.75rem;
-        letter-spacing: 0.02em;
-      }
-      .aside {
-        position: sticky;
-        top: 2rem;
-      }
-      .avatar {
-        width: 100%;
-        max-width: 180px;
-      }
-      .nav-mini a {
-        display: block;
-        font-size: 0.95rem;
-        margin: 0.25rem 0;
-      }
-      .badge-pill {
-        background: #eef2ff;
-        color: #4338ca;
-      }
-      .paper,
-      .item {
-        margin-bottom: 0.5rem;
-      }
-      .muted {
-        color: var(--muted);
-      }
-      .hr {
-        border: 0;
-        border-top: 1px solid #eee;
-        margin: 1.5rem 0;
-      }
-      .cv-btn {
-        display: flex;
-        align-items: center;
-        font-weight: 600;
-        width: 100%;
-        margin-bottom: 0.75rem;
-      }
-      .cv-btn span {
-        margin-left: 0.35rem;
-      }
-      @media (max-width: 991.98px) {
-        .aside {
-          position: static;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <div class="container pt-5">
@@ -196,82 +125,104 @@
         <main class="col-lg-8">
           <!-- About -->
           <section id="about" aria-label="About">
+            <h2 class="section-title">Bio</h2>
             <p>
               I am an aspiring HCI researcher preparing PhD applications in
-              <strong>Human–Computer Interaction</strong>, with a focus on
-              <em>human–AI collaboration, intelligibility, and evaluation</em>.
-              I study how design choices and systems constraints shape trust,
-              performance, and equity when people work with adaptive models. My
-              broader goal is to build interactive tools that make AI
-              <em>understandable, controllable, and reliable</em> in real
-              workflows.
+              Human–Computer Interaction, with a focus on human–AI
+              collaboration, intelligibility, and evaluation. I study how design
+              choices and systems constraints shape trust, performance, and
+              equity when people work with adaptive models.
+            </p>
+            <p>
+              Broadly, I hope to explore the intersection of Human–Computer
+              Interaction, explainable AI, and decision support. My long-term
+              goal is to design AI systems that help people interpret model
+              behavior, manage uncertainty, recover from errors, and
+              meaningfully guide adaptive models in high-stakes or everyday
+              contexts. Through controlled studies, interface experimentation,
+              and systems-minded prototyping, I aim to advance practical,
+              trustworthy human–AI interaction.
             </p>
           </section>
 
-          <!-- Interests -->
+          <!-- Research Interests -->
           <section id="interests" aria-label="Research Interests">
             <h2 class="section-title">Research Interests</h2>
+            <p>
+              My research focuses on advancing human–AI collaboration by
+              designing interactive systems that make intelligent technologies
+              more transparent, usable, and trustworthy. I study how people form
+              mental models of AI behavior, especially when systems are opaque,
+              uncertain, or adaptive, and how interface design can help users
+              interpret, steer, and collaborate with these models.
+            </p>
+
+            <p>I am interested in three connected directions.</p>
             <ul>
-              <li>Human–AI collaboration and mixed‑initiative interaction</li>
               <li>
-                Intelligible/transparent AI: explanations, uncertainty, and
-                control
+                Designing interaction techniques and explanation mechanisms that
+                improve intelligibility and user control.
               </li>
               <li>
-                Evaluation methods: calibration, workload, error recovery, and
-                fairness
+                Studying how people integrate algorithmic suggestions into
+                decision-making through controlled experiments and real-world
+                deployments.
               </li>
               <li>
-                Prototyping & experimentation: end‑to‑end interactive systems
-              </li>
-              <li>Participatory design and values‑centered HCI</li>
-              <li>
-                Systems pragmatics for usable ML (latency, logging,
-                privacy‑aware data flows)
+                Developing participatory methods that enable users to
+                meaningfully shape and influence the behavior of AI systems.
               </li>
             </ul>
           </section>
 
-          <!-- Statement (mini) -->
-          <section id="statement" aria-label="Mini Research Statement">
-            <p>
-              I aim to design interfaces and workflows that help people form
-              accurate mental models of AI systems and effectively steer them.
-              My PhD research will combine <strong>interaction design</strong>,
-              <strong>controlled and field evaluations</strong>, and
-              <strong>systems‑minded prototyping</strong> to advance practical,
-              trustworthy human–AI collaboration.
-            </p>
+          <!-- What's New -->
+          <section class="whats-new">
+            <h2 class="section-title">What's New</h2>
+            <div class="section-note"></div>
+            <ul>
+              <li>
+                <strong>Fall 2025:</strong> Preparing PhD applications for Fall
+                2026 in Human–Computer Interaction and Human–AI collaboration,
+                with a focus on trustworthy and intelligible AI.
+              </li>
+            </ul>
           </section>
 
-          <!-- Preparation & Coursework -->
-          <section id="prep" aria-label="Preparation and Coursework">
-            <h2 class="section-title">Preparation & Coursework</h2>
-            <p class="muted mb-2">
-              Selected graduate coursework and areas of active study.
+          <!-- Writing Sample -->
+          <section id="writing-sample" aria-label="Writing Sample">
+            <h2 class="section-title">Writing Sample</h2>
+
+            <p>
+              During my undergraduate studies, I completed a technical writing
+              project titled
+              <em
+                >“Automated Toll Tax Collection System Using Cloud
+                Database.”</em
+              >
+              It introduced me to structured research communication and
+              large-scale systems thinking, skills that continue to inform my
+              current work in HCI and interactive system design.
             </p>
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="mb-2">
-                  <li>Advanced Database Technology</li>
-                  <li>Networking & Advanced Data Communications</li>
-                  <li>Cloud Computing & Virtualization</li>
-                  <li>Data Structures & Algorithms</li>
-                  <li>Multimedia & Web Technology</li>
-                </ul>
+
+            <div class="writing-sample-container">
+              <!-- PDF Link -->
+              <div>
+                <a
+                  href="assets/Sai_Sriram_Gundepalli_Writing_Sample.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="pdf-link"
+                >
+                  View Pdf
+                </a>
               </div>
-              <div class="col-md-6">
-                <ul class="mb-2">
-                  <li>
-                    Mathematical Foundations: Probability, Statistics, Linear
-                    Algebra
-                  </li>
-                  <li>
-                    Independent study: human‑AI interaction, evaluation metrics,
-                    prototyping
-                  </li>
-                </ul>
-              </div>
+
+              <!-- Small Image Preview -->
+              <img
+                src="assets/writing_sample_preview.png"
+                alt="Writing Sample Preview"
+                class="writing-sample-thumb"
+              />
             </div>
           </section>
 
@@ -279,25 +230,34 @@
           <section id="background" aria-label="Professional Background">
             <h2 class="section-title">Professional Background</h2>
             <p>
-              I bring
-              <strong
-                >3+ years of professional software engineering
-                experience</strong
-              >
-              building user‑facing interfaces and reliable back‑end services. I
-              value clean architecture, performance, accessibility, and
-              iterative delivery, skills I apply to research prototyping and
-              empirical studies.
+              I have
+              <strong>3+ years of software engineering experience</strong>
+              building user-facing interfaces and large-scale, event-driven
+              back-end systems. My work emphasizes clean architecture,
+              performance, accessibility, and iterative design principles I now
+              apply to prototyping interactive AI systems and conducting
+              human-centered research.
             </p>
           </section>
 
           <!-- Education -->
-          <section id="education" aria-label="Education">
+          <section>
             <h2 class="section-title">Education</h2>
-            <div class="item">
-              <strong>M.S. in Computer Technology</strong> — Eastern Illinois
-              University
-              <div class="muted">GPA: 4.0/4.0</div>
+
+            <div class="edu-entry">
+              <div class="entry-title">M.S., Computer Technology</div>
+              <div class="entry-meta">
+                Eastern Illinois University · May 2024 · GPA: 4.0/4.0
+              </div>
+            </div>
+
+            <br />
+
+            <div class="edu-entry">
+              <div class="entry-title">B.S., Electronics and Communication</div>
+              <div class="entry-meta">
+                Jawaharlal Nehru Technological University Kakinada · July 2021
+              </div>
             </div>
           </section>
 
